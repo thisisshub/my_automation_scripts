@@ -3,7 +3,7 @@
 # based on user input {# must take multiple inputs}
 
 # example:
-# if today == Tuesday line 157 would be executed,
+# if today == Tuesday line 173 would be executed,
 # what i want is to take user input("which classes did you not attend?") 
 # suppose i did not attend DM()
 # then DE() must be executed but DM() should not be.
