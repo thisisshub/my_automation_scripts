@@ -1,36 +1,3 @@
-# TODO: 
-# make a switch case to run functions such as DM1() DS1()
-# based on user input {# must take multiple inputs}
-
-# example:
-# if today == Tuesday line 173 would be executed,
-# what i want is to take user input("which classes did you not attend?") 
-# suppose i did not attend DM()
-# then DE() must be executed but DM() should not be.
-
-
-
-"""
-
-i made somewhat of a working switch case
-def main():
-    print ('it works')
-def other():
-    print ('other')
-switch = {0:main, 1:other}
-switch[0]()
-
-output: it works
-
-"""
-
-
-
-
-
-
-
-
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
@@ -158,17 +125,6 @@ def function_to_decide_day():
         switch = {0:DELAB1, 1:CSA1, 2:DS1, 3:DM1, 4:DE1}
         if x == 'all':
             switch[range(0,4)]()
-        
-            # DELAB1()
-            # CSA1()
-            # DS1()
-            # DM1()
-            # DE1()
-            # DELAB()
-            # CSA()
-            # DS()
-            # DM()
-            # DE()
 
     if day == 'Tuesday':
         DE1()
@@ -220,9 +176,6 @@ def function_to_decide_day():
         DS()
         DE()
 
-
-
-# get_input("Did you attend all the classes?")
 percent = sheet.col_values(4)
 print (percent)
 function_to_decide_day()
